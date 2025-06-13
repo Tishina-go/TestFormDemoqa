@@ -60,17 +60,17 @@ public class TformDemoqa {
         $("#react-select-2-option-0").click();
 
 
-        $("label[for=hobbies-checkbox-2]").click();
-        $("label[for=hobbies-checkbox-3]").click();
+        $(".practice-form-wrapper").$(byText("Sports")).click();
+        //$("label[for=hobbies-checkbox-3]").click();
 
         $("#uploadPicture").uploadFromClasspath("ig.png");
 
         $("#currentAddress").setValue("Test Address 1/2");
 
         $("#state").scrollIntoView(true).click();
-        $("#react-select-3-option-2").click();
+        $(".practice-form-wrapper").$(byText("Haryana")).click();
         $("#city").click();
-        $("#react-select-4-option-0").click();
+        $(".practice-form-wrapper").$(byText("Karnal")).click();
 
         $(".text-right").click(); // Отправка формы
 
@@ -81,7 +81,7 @@ public class TformDemoqa {
         $(".table-responsive").$(byText("Mobile")).parent().shouldHave(text("9998887766"));
         $(".table-responsive").$(byText("Date of Birth")).parent().shouldHave(text("07 July,1991"));
         $(".table-responsive").$(byText("Subjects")).parent().shouldHave(text("Maths, Physics"));
-        $(".table-responsive").$(byText("Hobbies")).parent().shouldHave(text("Reading, Music"));
+        $(".table-responsive").$(byText("Hobbies")).parent().shouldHave(text("Sport"));
         $(".table-responsive").$(byText("Picture")).parent().shouldHave(text("ig.png"));
         $(".table-responsive").$(byText("Address")).parent().shouldHave(text("Test Address 1/2"));
         $(".table-responsive").$(byText("State and City")).parent().shouldHave(text("Haryana Karnal"));
